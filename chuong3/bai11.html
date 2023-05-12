@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("nhập số a"))
+        var b = Number(prompt("nhập số b"))
+        var c = Number(prompt("nhập số c"))
+        if(a + b > c && a + c >b && b + c >a){
+            if(a==b && b == c){
+                console.log("tam giác đều")
+            }else if(a==b || a ==c || b==c){
+                console.log("tam giác cân")
+            }else if(a**2+b**2 == c**2 ||a**2 + c**2 == b**2 ||c**2 + b**2 == a**2){
+                console.log("tam giác vuông")
+            }
+        }else{
+            console.log("khong phải tam giác")
+        }
+        
+    </script>
+</body>
+</html>
